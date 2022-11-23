@@ -10,7 +10,7 @@ class PlantsController < ApplicationController
 
     def create
         plant = Plant.create(plant_params)
-        render json: plant 
+        render json: plant,status: :created 
         
         
     end
